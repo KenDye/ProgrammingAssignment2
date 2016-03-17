@@ -22,7 +22,7 @@ makeCacheMatrix <- function(x = matrix()){
         list(set = set, get = get, setinverse = setinverse, getinverse = getinverse)
 }
 
-## cacheSOlve:
+## cacheSolve:
 ## 1. Computes the inverse of the special Matrix returned by makeCacheMatrix
 ## 2. CHeck to see if inverse has already been solved, if solved and the Matrix
 ##    has not changed, cacheSolve retrieves the inverse from cache and returns
@@ -40,15 +40,3 @@ cacheSolve <- function(x, ...) {
         x$setinverse(m)4
         m
 }
-
-
-
-
-
-
-
-
-
-
-
-
